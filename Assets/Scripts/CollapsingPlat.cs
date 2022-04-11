@@ -14,7 +14,6 @@ public class CollapsingPlat : MonoBehaviour
     void Update()
     {
         DisapearOn();
-        DisapearOff();
     }
     void DisapearOn(){
 if(PlayerOn){
@@ -25,20 +24,6 @@ if(PlayerOn){
             elapsed = elapsed % 1f;
             gameObject.SetActive(false);
             PlayerOn = false;
-            elapsed = 0f;
-        }
-
-}
-    }
-    void DisapearOff(){
-    if (!PlayerOn){
-    elapsed += Time.deltaTime;
-
-        if (elapsed >= 3f)
-        {
-            Debug.Log("Rea");
-            elapsed = elapsed % 1f;
-            gameObject.SetActive(true);
             elapsed = 0f;
         }
 }
