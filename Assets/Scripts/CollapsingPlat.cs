@@ -19,7 +19,7 @@ public class CollapsingPlat : MonoBehaviour
 if(PlayerOn){
     disapear = true;
         elapsed += Time.deltaTime;
-        if (elapsed >= 4f)
+        if (elapsed >= 3f)
         {
             elapsed = elapsed % 1f;
             gameObject.SetActive(false);
