@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -51,6 +52,7 @@ public class Player : MonoBehaviour
         if (col.gameObject.CompareTag("Hazards"))
         {
             Destroy(gameObject);
+            SceneManager.LoadScene("SampleScene");
         }
     }
 
